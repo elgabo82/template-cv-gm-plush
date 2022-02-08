@@ -1,5 +1,6 @@
-PlushCV
-=========================
+Mi Hoja de Vida basada en la plantilla PlushCV
+==============================================
+
 
 A **one-page**, **two asymmetric column** resume template in **XeTeX** that caters particularly to  Computer Science students.
 Has a bunch of font options as listed in Preview. Inspired by [**deedy-resume**](https://github.com/deedy/Deedy-Resume). 
