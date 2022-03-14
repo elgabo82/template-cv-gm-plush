@@ -1,0 +1,444 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PlushCV - One Page Two Column Resume
+% LaTeX Template
+% Version 1.0 (11/28/2021)
+%
+% Author:
+% Shubham Mazumder (http://mazumder.me)
+%
+% Hacked together from:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add more icon options 
+% 4. Fix hacky left alignment on contact line
+% 5. Remove Hacky fix for awkward extra vertical space
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the vertical limit.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%Icons:
+%%Main: https://icons8.com/icons/carbon-copy
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{plushcv}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{Gabriel}{Morejón López}{Ingeniero de Sistemas, Mgtr.}
+{\contactline{\href{https://www.grupofmo.com}{grupofmo.com}}{\href{https://www.github.com/elgabo82}{elgabo82}}{\href{https://www.linkedin.com/in/}{gabriel-eduardo-morejon-lopez}}{\href{mailto:gabrielmorejon@gmail.com}{gabrielmorejon@gmail.com}}{\href{tel:+5930995974963}{+5930995974963}}}
+
+% \namesection{Firstname}{Lastname}{Full Stack Software Engineer}{\contactline{\href{https://www.mazumder.me}{mazumder.me}}{\href{https://www.github.com/sansquoi}{sansquoi}}{\href{https://www.linkedin.com/mazumders}{mazumders}}{\href{mailto:shubham.mazumder@gmail.com}{first.last@email.com}}{\href{tel:+1999999999}{9999999999}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.70\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Perfil
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Perfil Profesional}
+\runsubsection{}
+\descript{Ingeniero de Sistemas experimentado con facilidad para aprender nuevas tecnologías rápidamente; he trabajado con gente de mucha experiencia, me gusta experimentar con nuevos proyectos para poner a prueba mis conocimientos. Entusiasta del Código Abierto Open Source Software Libre, de la Inteligencia Artificial y el Desarrollo de videojuegos.}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experiencia}
+\runsubsection{GrupoFMO}
+\descript{| Responsable de Proyectos}
+\location{Junio 2018 – Junio 2020 | Portoviejo, Ecuador}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\sectionsep
+\item Administré toda la infraestructura basada en Proxmox como solución de virtualización. Teníamos servidores virtuales y contenedores con diferentes sistemas operativos Linux. (AlmaLinux/Ubuntu/CentOS/Fedora).
+\item Instalé y administré la plataforma colaborativa Zimbra OSS.
+\item Instalé y administré las plataformas Grafana, Chronograf, Telegraf, MQTT para IoT.
+\item Trabajé con dos proyectos IoT, realicé algunas tareas de programación usando React, HTML, Arduino.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Corporación Nacional de Telecomunicaciones.}
+\descript{CNT - EP | Analista de Soporte de T.I. }
+\location{Febrero 2010 – Abril 2019 | Portoviejo, Ecuador.}
+\begin{tightemize}
+\sectionsep
+\item Administré el soporte técnico regional de la Zona 4, todas las tareas de soporte estuvieron bajo mi responsabilidad.
+\item Colaboré con la migración de los enlaces Dial-Up al enlace coporativo de fibra óptica, migración de enrutadores (routers), conmutadores (switches).
+\item Creé planes para mejorar el soporte al usuario final y la atención de las tareas propias de soporte.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Presidencia de la República}
+\descript{| Asesor de T.I. - Comisión de servicios }
+\location{Julio 2012 – Marzo 2016 | Quito}
+\begin{tightemize}
+\sectionsep
+\item Trabajé directamente con el Presidente de la República, fui responsable de la asesoría sobre aspectos tecnológicos.
+\item Ejecuté actividades para promover el Open Source a nivel del Gobierno.
+\item Coordiné las actividades de T.I. a nivel Nacional (Ministerios, Secretarías, Empresas públicas), fui responsable de las reuniones de Gabinete en sus dos modalidades, presencial y virtual.
+\item Utilicé la tecnología disponible para manetener nuestros servicios, dentro y fuera del País.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{ESPAM}
+\descript{| Profesor de Maestría de Tecnologías de la Información}
+\location{Nov 12, 2020 – Dic 6, 2020 | QoS para redes TCP/IP de alta velocidad, Portoviejo/Manabí, Ecuador}
+\location{Mayo 2020 – Junio 2020 | Telecomuncaciones y Redes Móviles, Portoviejo/Manabí, Ecuador}
+\location{Feb 15, 2019 – Marzo 6, 2019 | QoS para redes TCP/IP de alta velocidad, Portoviejo - Calceta/Manabí, Ecuador}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+	\sectionsep
+	\item Profesor de QoS para redes TCP/IP de alta velocidad, 3era Cohorte - virtual, Nov 2020.
+	\item Profesor de Telecomunicaciones y Redes Móviles, 3era Cohorte - virtual, Mayo 2020.
+	\item Profesor de QoS para redes TCP/IP de alta velocidad, 2da Cohorte, Feb 2019.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards} 
+% \begin{tabular}{rll}
+% 2020	     & Finalist & Lorem Ipsum\\
+% 2018	     & $2^{nd}$ & Dolor Sit Amet\\
+% 2015	     & Finalist  & Cras posuere\\
+% \\
+% \end{tabular}
+% \sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.25\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Habilidades}
+\subsection{Programación}
+\sectionsep
+\location{Competente:}
+HTML \textbullet{} JavaScript \textbullet{} SQL \textbullet{} R \textbullet{} BASH Scripting \\
+%\sectionsep
+%\location{Experienced:}
+%Python \textbullet{} \LaTeX\ \textbullet{}  C++  \\
+\sectionsep
+\location{Familiar:}
+C/C++/C\# \textbullet{} Shell \textbullet{}  Assembler \textbullet{} AI \textbullet{} Game Dev \textbullet{} IoT \\
+\sectionsep
+
+\subsection{Infraestructura de T.I.}
+\location{Competente:}
+Linux \textbullet{} Windows \textbullet{} Networking \textbullet{} IoT \textbullet{} Bases de datos \\
+\sectionsep
+\location{Familiar:}
+Fedora \textbullet{} Ubuntu \textbullet{} Cisco \textbullet{} Mikrotik \textbullet{} AlmaLinux \textbullet{} CentOS \textbullet{} RedHat \textbullet{} VoIP \\
+\sectionsep
+
+
+\subsection{Librerías/Frameworks}
+\sectionsep
+React \textbullet{} React-Native \textbullet{} Node.js \textbullet{} Ionic \\
+\sectionsep
+\sectionsep
+\subsection{Herramientas/Plataformas}
+\sectionsep
+Git \textbullet{} Drupal \textbullet{} Unity3D \textbullet{} Docker \textbullet{} Zimbra \textbullet{} Alfresco \textbullet{} R-Studio \textbullet{} MariaDB \textbullet{} PostgreSQL \textbullet{} MongoDB \textbullet{} Apache \textbullet{} Nginx \textbullet{} MSSQL \textbullet{} Nagios \textbullet{} Cacti \textbullet{} Zabbix \textbullet{} Zenoss \textbullet{} Terraform \textbullet{} Ansible \\
+
+\sectionsep
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%     EDUCATION
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{Educación} 
+	\subsection{Universidad de las Fuerzas Armadas - ESPE}
+	\descript{Maestría en Gerencia de Sistemas de T.I.}
+	\location{Oct 2015 - Oct 2017 | Sangolquí/Quito, Ecuador}
+	\location{ Reg. Num. 1079-2018-1934296 }
+	
+	\sectionsep
+	\subsection{Universidad Técnica de Manabí - UTM}
+	\descript{Ingeniero de Sistemas Informáticos}
+	\location{Apr 2000 - Oct 2006| Portoviejo, Manabi/Ecuador}
+	\location{ Reg. Num. : 1009-07-794995 }
+	\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Coursework}
+
+%\subsection{Graduate}
+%Graduate Algorithms \textbullet{}\\ 
+%Advanced Computer Architecture \textbullet{}\\ 
+%Operating Systems \textbullet{}\\ 
+%Artificial Intelligence \textbullet{}\\
+%Visualization For Scientific Data \\
+%\sectionsep
+
+%\subsection{Undergraduate}
+% Database Management Systems \textbullet{}\\
+% Object Oriented Analysis and Design \textbullet{}\\
+% Artificial Intelligence and Expert Systems \textbullet{}\\
+% Scripting Languages and Web Tech \textbullet{}\\
+% Software Engineering \\
+
+\end{minipage} 
+
+% Siguiente página
+
+\begin{minipage}[t]{0.70\textwidth} 
+	
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%     EXPERIENCE
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\section{Experiencia}	
+	%
+	\runsubsection{Ministerio de Justicia, D.D.H.H. y Cultos.}
+	\descript{| Director Nacional de T.I. - Comisión de Servicios}
+	\location{Junio 2017 – Dic 2017 | Quito, Ecuador}
+	\begin{tightemize}
+		\sectionsep
+		\item Administré los servicios de T.I. y el equipo de tecnología a nivel nacional.
+		\item Trabajé en procesos de migración de los escritorios y demás infraestructura de T.I. con Open Source.
+	\end{tightemize}
+	\sectionsep
+	%
+	\runsubsection{Cooperativa 15 de Abril, Ltda.}
+	\descript{| Operador de T.I. }
+	\location{Oct 2004 – Dic 2007 | Portoviejo, Ecuador}
+	\begin{tightemize}
+		\sectionsep
+		\item Migré los Servidores Windows y Oracle a Red Hat Enterprise Linux y Oracle for Linux.
+		\item Trabajé con tecnologías y plataformas como Oracle Databases (6i to 9i), PL/SQL, Sun Solaris, y la administración de la red.
+	\end{tightemize}
+	\sectionsep
+		
+	
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%     Projects
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\section{Proyectos}
+	
+	\runsubsection{GlobalGameJam - Ecuador}
+	\descript{| Unity3D - C\#}
+	\location{2022}
+	\begin{tightemize}
+		\item The Usual Window - Global Game Jam.
+		\item Find your soul - Prototipo 3D subido en Itch.io.
+		\item Destroy stones - Prototipo 3D subido en Itch.io.
+	\end{tightemize}
+	\sectionsep	
+	
+	\runsubsection{CropSensor}
+	\descript{| Arduino/ESP32/C++}
+	\location{2019-2020}
+	\begin{tightemize}
+		\item Proyecto IoT para recolectar información de áreas agrícolas, principalmente bananeras.
+	\end{tightemize}
+	\sectionsep
+	
+	\runsubsection{TunaSensor}
+	\descript{| Arduino/ESP32/C++}
+	\location{2019-2020}
+	\begin{tightemize}
+		\item Proyecto IoT para recolectar información de los procesos de producción de atún y buscar mejoras.
+	\end{tightemize}
+	%\sectionsep
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Publicaciones
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{Historial de publiaciones}
+	\runsubsection{"Modelo de innovación tecnológica y de responsabilidad social, usando soluciones basadas en Software Libre y el hardware “RaspBerry Pi”, para la producción de una MicroPC de consumo masivo de propósito general a bajo costo."}
+	\descript{| ESPE, 2017}	
+	\location {Morejón López, G.E., Vicerrectorado de Investigación, Innovación y Transferencia de Tecnología.}
+	%\sectionsep
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%     Involucramiento Profesional
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{involucramiento Profesional y Voluntariado}
+	
+	\runsubsection{Awana | Software Development \& English Camp}
+	\descript{| Awana \href{https://www.awana.io}{www.awana.io}}
+	\location{Software Development \& English Camp - 2021-2022}
+	\sectionsep
+	
+	\runsubsection{Reto Yubox}
+	\descript{| Yubox \href{https://www.yubox.com}{Yubox.com} ESPOL - i3lab \href{https://www.i3lab.org}{www.i3lab.org}}
+	\location{2do lugar con el proyecto IoT CropSensor}
+	\sectionsep
+	
+	\runsubsection{Cooperativa de Tecnologías Libres}
+	\descript{| Cooplibretec}
+	\location{Miembro desde 2020}
+	\sectionsep
+	
+	\runsubsection{Wikipedia Ecuador, Grupo Portoviejo}
+	\descript{| Wikipedia}
+	\location{Miembro desde 2018}
+	\sectionsep
+		
+	\runsubsection{Internet Engineering Task Force - Capítulo Ecuador}
+	\descript{| IETF}
+	\location{Miembro desde 2017}
+	\sectionsep		
+	
+	\runsubsection{Festival Latinoamericano de Instalación de Software Libre}
+	\descript{| FLISOL}
+	\location{From 2005 to 2008}	
+	
+	\runsubsection{Asociación Ecuatoriana de Software Libre}
+	\descript{| ASLE}
+	\location{Miembro desde 2005}
+	\sectionsep
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%     AWARDS
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	% \section{Awards} 
+	% \begin{tabular}{rll}
+	% 2020	     & Finalist & Lorem Ipsum\\
+	% 2018	     & $2^{nd}$ & Dolor Sit Amet\\
+	% 2015	     & Finalist  & Cras posuere\\
+	% \\
+	% \end{tabular}
+	% \sectionsep
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%
+	%     COLUMN TWO
+	%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.25\textwidth} 
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%     Languages
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\sectionsep
+	\section{Idiomas} 
+	\subsection{Español - Nativo}
+	\descript{Lectura, escritura y hablado nativo.}
+	
+	\sectionsep
+	\subsection{Inglés - B1}
+	\descript{Mejorando las habilidades de habla, lectura y escritura en el EnglishCamp}
+	\location{\href{https://www.awana.io}Awana - www.awana.io}
+	
+	%\location{ Cum. GPA: 3.7 / 4.0 }
+	\sectionsep
+	\subsection{Francés - Básico}
+	\descript{EF Alliance Française - Portoviejo -  2010 - Nivel básico}
+
+	\section{Intereses}
+	\subsection{}
+	\descript{Software \& Desarrollo de video juegos, AI, Python, PHP.}
+	\sectionsep
+	
+	\section{Aficiones}
+	\subsection{}
+	\descript{Deportes (Fútbol/Tenis de mesa). Video juegos y mi familia.}
+	\sectionsep
+	
+	
+		
+	% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% %     REFERENCES
+	% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	%\section{Interests} 
+	%\href{https://www.linkedin.com/company/john-doe/}{\textbf{John Doe}, Senior Software Developer, Tyrell Corp}
+	%\begingroup
+	%\setbox0=\hbox{
+	%	\includegraphics[scale=0.1,trim={0 1cm 0cm 0cm}]{icons/main/mail.png}\hspace{0.3cm} john.doe@email.com
+	%}
+	%\parbox{\wd0}{\box0}
+	%\endgroup
+	%\begingroup
+	%\setbox0=\hbox{
+	%	\includegraphics[scale=0.1,trim={0 1.25cm -0.4cm 0cm}]{icons/main/phone.png}\hspace{0.3cm}+19999999999
+	%}
+	%\parbox{\wd0}{\box0}\endgroup
+	%\\
+	%\sectionsep
+	%\href{https://www.linkedin.com/company/john-doe/}{\textbf{Jane Doe}}, Senior Software Developer, Primatech 
+	%\\
+	%\begingroup
+	%\setbox0=\hbox{
+	%	\includegraphics[scale=0.1,trim={0 1cm 0cm 0cm}]{icons/main/mail.png}\hspace{0.3cm} jane.doe@email.com
+	%}
+	%\parbox{\wd0}{\box0}
+	%\endgroup
+	%\begingroup
+	%\setbox0=\hbox{
+	%	\includegraphics[scale=0.1,trim={0 1.25cm -0.4cm 0cm}]{icons/main/phone.png}\hspace{0.3cm}+19999999999
+	%}
+	%\parbox{\wd0}{\box0}\endgroup
+	%\\
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%     COURSEWORK
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	%\section{Coursework}
+	
+	%\subsection{Graduate}
+	%Graduate Algorithms \textbullet{}\\ 
+	%Advanced Computer Architecture \textbullet{}\\ 
+	%Operating Systems \textbullet{}\\ 
+	%Artificial Intelligence \textbullet{}\\
+	%Visualization For Scientific Data \\
+	%\sectionsep
+	
+	%\subsection{Undergraduate}
+	% Database Management Systems \textbullet{}\\
+	% Object Oriented Analysis and Design \textbullet{}\\
+	% Artificial Intelligence and Expert Systems \textbullet{}\\
+	% Scripting Languages and Web Tech \textbullet{}\\
+	% Software Engineering \\
+	
+\end{minipage} 
+
+\end{document}  \documentclass[]{article}
+
